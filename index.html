@@ -1,0 +1,36 @@
+<script>
+const arr=[1,2,3,4,6,5,6,7];
+arr.pop()
+console.log(arr)
+arr.push(16)
+console.log(arr);
+arr.shift()
+console.log("8",arr)
+arr.unshift(33)
+console.log("10",arr);
+let x=arr.concat(55,90)
+console.log(x);
+
+let z=arr.join("")//this will remove comma as well 
+console.log(z)
+let l =arr.slice(-3,-1);
+console.log(l)
+ arr.splice(4,1,89)
+console.log(arr)
+arr.splice(-1,1,45)
+console.log(arr)
+arr.splice(2,2)
+console.log('23',arr)
+console.log(arr.includes(6))
+console.log(arr.indexOf(6))
+console.log(arr.lastIndexOf(6))
+
+console.log("hi",arr.some(check));
+function check(arr){
+    return arr>60;
+}
+console.log("32",arr.find(check))
+
+arr.fill(567,2,4)
+console.log(arr);
+</script>
